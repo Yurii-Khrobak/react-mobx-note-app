@@ -1,0 +1,41 @@
+.notesList
+  display: flex
+  flex-direction: column
+  row-gap: 15px
+
+.noteItem
+  background: var(--color-background-accent)
+  border-radius: 20px
+  padding: 15px
+  white-space: nowrap
+  text-decoration: none
+  color: var(--color-text)
+
+  &__title
+    margin-bottom: 10px
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+
+  &__body
+    text-overflow: ellipsis
+    overflow: hidden
+    white-space: nowrap
+
+.noteAddBtn 
+  background: orange
+
+  position: absolute
+  width: 75px
+  height: 75px
+  border-radius: 50%
+  top: 85%
+  left: 75%
+
+  &::after
+    position: relative
+    content: '+'
+    top: 15px
+    left: 26px
+    color: white
+    font-size: 40px
